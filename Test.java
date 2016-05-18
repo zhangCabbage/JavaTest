@@ -34,6 +34,7 @@ public class Test {
 		System.out.println(one.toString());
 		
 		System.out.println("123"+0);//1230
+		
 		System.out.println((int)'A');//65
 		System.out.println((int)'Z');//90
 		System.out.println((int)'a');//97
