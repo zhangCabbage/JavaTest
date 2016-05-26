@@ -38,5 +38,7 @@ public class Test {
 		System.out.println((int)'Z');//90
 		System.out.println((int)'a');//97
 		System.out.println((int)'z');//122
+
+		System.out.println("\\");
 	}
 }
