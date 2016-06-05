@@ -40,5 +40,8 @@ public class Test {
 		System.out.println((int)'z');//122
 
 		System.out.println("\\");
+
+		char[] c = {'a', 'b', 'c'};
+		System.out.println(String.valueOf(c, 1, 2));
 	}
 }
