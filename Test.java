@@ -46,5 +46,6 @@ public class Test {
 
 		System.out.println(1==2);
 		//boolean型变量的值为小写的true和false,python中为大写
+
 	}
 }
