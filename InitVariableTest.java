@@ -55,11 +55,11 @@ public class InitVariableTest {
 //		System.out.println(InitVariableTest.a);
 		InitVariableTest test = new InitVariableTest();
 		System.out.println(test.a);//只能这样访问本身类
-		A classA = new A();
+		ABC classA = new ABC();
 //		System.out.println(classA.abc);//出错！
 	}
 }
 
-class A{
+class ABC{
 	private int abc = 3;
 }

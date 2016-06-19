@@ -2,6 +2,7 @@ package zhang.algorithm.JavaTest;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Test {
@@ -47,5 +48,7 @@ public class Test {
 		System.out.println(1==2);
 		//boolean型变量的值为小写的true和false,python中为大写
 
+		String name = "zhangjiahua";
+		System.out.println(name.split("\\.").length);
 	}
 }
