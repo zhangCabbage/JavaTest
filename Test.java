@@ -49,5 +49,9 @@ public class Test {
 
 		String name = "zhangjiahua";
 		System.out.println(name.split("\\.").length);
+
+		BigInteger a = null;
+		BigInteger b = null;
+		System.out.println(a == b);
 	}
 }
