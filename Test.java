@@ -59,5 +59,8 @@ public class Test {
         System.out.println((Integer.MIN_VALUE - 1) / -1);
 
         System.out.println("zhang_gao".indexOf("galo"));
+
+        System.out.println("zhang.txt".endsWith(".txt"));
+
     }
 }

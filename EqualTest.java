@@ -42,15 +42,27 @@ public class EqualTest {
 		System.out.println("test3.equals(test2) ---> "+test3.equals(test2));
 		
 		System.out.println("----------------");
-		zhangNumber number1 = new zhangNumber(3, 20);
-		zhangNumber number2 = new zhangNumber(3, 22);
+		zhangNumber1 number1 = new zhangNumber1(3, 20);
+		zhangNumber1 number2 = new zhangNumber1(3, 22);
 		System.out.println(number1.equals(number2));
-		Set<zhangNumber> set = new HashSet<zhangNumber>();
+		Set<zhangNumber1> set = new HashSet<zhangNumber1>();
 		set.add(number1);
 		//HashSet使用contains判断两个元素是否相同，不仅需要equals相等，还需要hashCode相同
 		System.out.println("set.contains(number2) ---> "+set.contains(number2));
 		set.add(number2);
 		System.out.println(set);
+
+		System.out.println("----------------");
+		zhangNumber2 number3 = new zhangNumber2(3, 20);
+		zhangNumber2 number4 = new zhangNumber2(4, 22);
+		System.out.println(number3.equals(number4));
+		Map<zhangNumber2, Integer> map2 = new HashMap<zhangNumber2, Integer>();
+		map2.put(number3, 1);
+		//HashSet使用contains判断两个元素是否相同，不仅需要equals相等，还需要hashCode相同
+		System.out.println("map.get(number4) ---> "+map2.get(number4));
+		map2.put(number4, 2);
+		System.out.println(map2.size());
+
 		
 		//String虽然是引用类型，但是使用起来跟基本类型是一样的
 		Map<String, String> map = new HashMap<String, String>();
@@ -70,10 +82,10 @@ public class EqualTest {
 	}
 }
 
-class zhangNumber{
+class zhangNumber1 {
 	public int num;
 	public int age;
-	public zhangNumber(int num, int age){
+	public zhangNumber1(int num, int age){
 		this.num = num;
 		this.age = age;
 	}
@@ -82,8 +94,8 @@ class zhangNumber{
 		if(obj == this){
 			return true;
 		}
-		if(obj instanceof zhangNumber){
-			zhangNumber number = (zhangNumber) obj;
+		if(obj instanceof zhangNumber1){
+			zhangNumber1 number = (zhangNumber1) obj;
 			return this.num==number.num;
 		}
 		return false;
@@ -91,6 +103,35 @@ class zhangNumber{
 	@Override
 	public int hashCode() {
 		return num+age;
+	}
+}
+
+class zhangNumber2{
+	public int num;
+	public int age;
+	public zhangNumber2(int num, int age){
+		this.num = num;
+		this.age = age;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == this){
+			return true;
+		}
+		if(obj instanceof zhangNumber1){
+			zhangNumber1 number = (zhangNumber1) obj;
+			return this.num==number.num;
+		}
+		return false;
+	}
+	@Override
+	public int hashCode() {
+		return 123;
+	}
+
+	@Override
+	public String toString() {
+		return "num "+num+", age "+age;
 	}
 }
 

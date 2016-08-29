@@ -48,7 +48,9 @@ public class GuavaTest {
      * Math
      */
     public static void guavaMath() {
+        //二项式系数
         System.out.println(IntMath.binomial(4, 1));//4
+
     }
 
     /**
