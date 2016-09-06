@@ -1,6 +1,7 @@
 package zhang.algorithm.JavaTest.DateTime;
 
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * Created by IntelliJ IDEA.
@@ -10,8 +11,24 @@ import java.util.Date;
  * To change this template use File | Settings | File Templates.
  */
 public class DateTimeTest {
+    /**
+     *
+     */
+    public static void calendarTest() {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar calendar = Calendar.getInstance();
+
+        calendar.add(Calendar.DATE, -1); //在天数上加减
+        System.out.println(format.format(calendar.getTime()));
+
+        calendar.add(Calendar.MONTH, 3); //在月上加减
+        System.out.println(format.format(calendar.getTime()));
+
+        calendar.add(Calendar.YEAR, 3); //在年上加减
+        System.out.println(format.format(calendar.getTime()));
+    }
 
     public static void main(String[] args) {
-        System.out.println(new Date().getTime() == System.currentTimeMillis());
+        calendarTest();
     }
 }
