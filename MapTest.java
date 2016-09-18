@@ -14,7 +14,7 @@ public class MapTest {
         Map<String, String> map = new HashMap<String, String>();
         map.put(null, null);
         map.put("zhang", null);
-        map.put("gao", null);
+        map.put("zhang", "123");
         System.out.println(map.size());//3
 
         Map<String, String> map2 = new Hashtable<String, String>();
@@ -23,5 +23,7 @@ public class MapTest {
         map2.put("zhang", "zhang");
         System.out.println(map2.size());
         System.out.println(map2.get("gao"));
+
+
     }
 }
