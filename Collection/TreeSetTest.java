@@ -41,6 +41,15 @@ public class TreeSetTest {
 //        [(zhang, 12), (zhang, 13), (zhang, 14), (zhang, 15)]
 //        false
 //        [(zhang, 12), (zhang, 13), (zhang, 14), (zhang, 15)]
+
+        TreeSet<Integer> set2 = new TreeSet();
+        set2.add(12);
+        set2.add(11);
+        set2.add(11);
+        set2.add(13);
+        for (Integer num : set2) {
+            System.out.println(num);
+        }
     }
 }
 
