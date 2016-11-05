@@ -1,4 +1,4 @@
-package zhang.algorithm.JavaTest.JVM;
+package zhang.algorithm.JavaTest.JVM.GC;
 
 /**
  * Created by IntelliJ IDEA.

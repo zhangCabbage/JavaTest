@@ -1,4 +1,4 @@
-package zhang.algorithm.JavaTest.JVM;
+package zhang.algorithm.JavaTest.JVM.OutOfMemory;
 
 /**
  * Created by IntelliJ IDEA.

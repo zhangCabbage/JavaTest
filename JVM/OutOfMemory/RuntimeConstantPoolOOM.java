@@ -1,4 +1,4 @@
-package zhang.algorithm.JavaTest.JVM;
+package zhang.algorithm.JavaTest.JVM.OutOfMemory;
 
 import java.util.ArrayList;
 import java.util.List;

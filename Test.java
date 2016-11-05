@@ -61,6 +61,5 @@ public class Test {
         System.out.println("zhang_gao".indexOf("galo"));
 
         System.out.println("zhang.txt".endsWith(".txt"));
-
     }
 }
