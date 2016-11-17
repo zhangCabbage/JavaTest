@@ -13,9 +13,10 @@ public class MapTest {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<String, String>();
         map.put(null, null);
-        map.put("zhang", null);
         map.put("zhang", "123");
-        System.out.println(map.size());//3
+        map.put("zhang", null);
+        System.out.println(map.size());//2
+        System.out.println(map.get("zhang"));
 
         Map<String, String> map2 = new Hashtable<String, String>();
 //        map2.put(null, null);//java.lang.NullPointerException
@@ -24,6 +25,11 @@ public class MapTest {
         System.out.println(map2.size());
         System.out.println(map2.get("gao"));
 
+    }
+}
 
+class ProtectedTest extends Object{
+    protected void print(){
+        System.out.println("ProtectedTest print!");
     }
 }
